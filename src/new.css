@@ -227,7 +227,8 @@ h3{
 }
 #skills h3{
     box-sizing: border-box;
-    border-bottom: solid 2px rgb(130, 4, 248);
+    border-bottom: solid 2.5px rgb(130, 4, 248);
+    border-top: solid 2.5px rgb(130, 4, 248);
     width: 100vw;
     height: 30vh;
     padding: 0;
@@ -369,52 +370,43 @@ footer div {
 .fa-linkedin:hover, .fa-github:hover{
     font-size: 7vh;
 }
-@media  (min-width: 320px) and (max-width: 700px){
+@media  (min-width: 320px) and (max-width: 1024px){
     nav{
-        /* border: solid red; */
-        height: 10vh;
+        height: 15vh;
     }
     nav ul{
         width: 100vw;
-        /* border: solid rgb(19, 202, 172); */
     }
     nav ul li{
         font-size: 2vh;
-        width: 25vw;
-        /* border: solid red; */
+        width: 22vw;
     }
     nav ul li:hover{
         font-size: 2.5vh;
-        /* color: rgb(5, 255, 213); */
     }
     main{
-        height: 521vh;
+        height: 494vh;
     }
     #cover-img{
-        height: 120vh;
-        background-size: 100vw 60vh;
+        height: 70vh;
+        background-size: 100vw 70vh;
     }
     #cover-page{
-        /* border: solid rgb(16, 19, 18); */
-        height: 60vh;
+        height: 70vh;
     }
     h1, h2{
-        /* border: solid rgb(17, 238, 164); */
-        font-size: 2vh;
+        font-size: 2.5vh;
     }
     h2{
         width: 70vw;
     }
-
     #about-me{
         width: 100vw;
         height: 100vh;
-        /* border: solid blue; */
     }
     h3{
         height: 20vh;
-        font-size: 5vh;
-        /* border: solid blue; */
+        font-size: 4vh;
     }
     #about-me-content{
         flex-direction: column;
@@ -422,11 +414,9 @@ footer div {
         height: 80vh;
     }
     .my-photo{
-        /* border: solid red; */
         height: 30vh;
     }
     #about-me-content p{
-        /* border: solid palegoldenrod; */
         font-size: 3vh;
         line-height: 5vh;
         width: 90vw;
@@ -434,30 +424,25 @@ footer div {
         margin: 0;
     }
     #projects{
-        /* border: solid rgb(121, 112, 15); */
         height: 134vh;
     }
     #project-tittle{
-        /* border: solid rgb(245, 6, 205); */
         height: 20vh;
     }
     .portafolio-icon{
-        width: 15vw;
+        margin-right: 1vh;
+        width: 18vw;
         height: 10vh;
     }
     #project-content{
-        /* border: solid rgb(60, 255, 0); */
         height: 114vh;
         flex-wrap: nowrap;
         flex-direction: column;
     }
     .actual-project {
-        /* border: solid blue; */
         width: 100vw;
-        height: 38vh;
-        padding: 0;
+        height: 37vh;
         flex-direction:column;
-        position: relative;
     }
     .project-img{
         width: 90vw;
@@ -465,14 +450,11 @@ footer div {
         border-radius: 5vh;
     }
     .desktop{
-        /* border: solid purple; */
         width: 15vw;
         height: 7vh;
-        visibility: hidden;
     }
     .project-info{
         top: 0vh;
-        transition: 0.4s;
     }
     #citalk:hover .project-info,
     #wikiatletas:hover .project-info,
@@ -480,26 +462,125 @@ footer div {
         width: 90vw;
         height: 30vh;
     }
-    #citalk:hover .desktop, 
-    #wikiatletas:hover .desktop,
-    #mdlinks:hover .desktop{
-        visibility: visible;
-    }
     .demo-btn{
-        text-align: center;
         font-size: 2.8vh;
-        line-height: 9vh;
-        text-decoration: none;
+        line-height: 7vh;
         width: 30vw;
         height: 7vh;
-        color: rgb(25, 25, 26);
-        background-color: rgba(247, 247, 247, 0.87);
-        border-radius: 5vh;
-        transition: 0.8s;
     }
-    .demo-btn:hover{
-        background-color: rgb(117, 0, 212);
-        color: oldlace;
+    #skills{
+         width: 100vw;
+         height: 170vh;
     }
-    
+    #skills h3{
+        width: 100vw;
+        height: 20vh;
+    }
+    #skills-content{
+        justify-content: space-evenly;
+        width: 100vw;
+        height: 150vh;
+        padding: 0;
+        margin: 0;
+    }
+    #hard-skills, #soft-skills{
+        height: 78vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    #soft-skills{
+        height: 60vh;
+    }
+    .skill-icon{
+        width: 40vw;
+        height: 20vh;
+    }
+    #hard-skills .skill-icon{
+        width: 40vw;
+        height: 20vh;
+    }
+    .actual-skill-icon{
+        width: 40vw;
+        height: 20vh;
+    }
+    .soft-skill-item{
+        width: 6vw;
+        max-height: 30vh;
+    }
+    .soft-item{
+        width: 40vw;
+        height: 12vh;
+    }
+    .soft-item p{
+        font-size: 2.5;
+    }
+    .skill-items{
+        width: 95vw;
+        height: 55vh;
+    }
+    #soft-skills .skill-items{
+        height: 40vh;
+        padding-top: 3vh;
+    }
+    .actual-item p, .dev-item p{
+        font-size: 2.5vh;
+        border-radius: 2vh;
+    }
+    .dev-item p{
+        margin-top: 3vh;
+    }
+    .actual-item{
+        width: 31vw;
+        height: 20vh;
+    }
+    .actual-item ul, .dev-item ul{
+        height: 15vh;
+        font-size: 2.4vh;
+        width: 28vw;
+    }
+    .dev-item{
+        width: 90vw;
+        height: 25vh;
+    }
+    .dev-item ul{
+        height: 20vh;
+        width: 45vw;
+    }
+    footer{
+        height: 25vh;
+    }
+    footer p {
+        margin: 0;
+        font-size: 2.8vh;
+        height: 6vh;
+    }
+    footer div {
+        margin-top: 1vh;
+        width: 80vw;
+        height: 6vh;
+    }
+    .fa-linkedin, .fa-github{
+        font-size: 5vh;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) { 
+    .actual-skill-icon{
+        width: 28vw;
+    }
+    .portafolio-icon{
+        width: 15vw;
+    }
+    .project-img{
+        width: 85vw;
+    }
+    .desktop{
+        width: 13vw;
+    }
+    #citalk:hover .project-info,
+    #wikiatletas:hover .project-info,
+    #mdlinks:hover .project-info{
+        width: 85vw;
+    }
+
 }
