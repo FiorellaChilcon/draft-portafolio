@@ -376,16 +376,130 @@ footer div {
     }
     nav ul{
         width: 100vw;
-        border: solid rgb(19, 202, 172);
+        /* border: solid rgb(19, 202, 172); */
     }
     nav ul li{
         font-size: 2vh;
         width: 25vw;
-        border: solid red;
+        /* border: solid red; */
     }
     nav ul li:hover{
         font-size: 2.5vh;
         /* color: rgb(5, 255, 213); */
+    }
+    main{
+        height: 521vh;
+    }
+    #cover-img{
+        height: 120vh;
+        background-size: 100vw 60vh;
+    }
+    #cover-page{
+        /* border: solid rgb(16, 19, 18); */
+        height: 60vh;
+    }
+    h1, h2{
+        /* border: solid rgb(17, 238, 164); */
+        font-size: 2vh;
+    }
+    h2{
+        width: 70vw;
+    }
+
+    #about-me{
+        width: 100vw;
+        height: 100vh;
+        /* border: solid blue; */
+    }
+    h3{
+        height: 20vh;
+        font-size: 5vh;
+        /* border: solid blue; */
+    }
+    #about-me-content{
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+    }
+    .my-photo{
+        /* border: solid red; */
+        height: 30vh;
+    }
+    #about-me-content p{
+        /* border: solid palegoldenrod; */
+        font-size: 3vh;
+        line-height: 5vh;
+        width: 90vw;
+        height: 40vh;
+        margin: 0;
+    }
+    #projects{
+        /* border: solid rgb(121, 112, 15); */
+        height: 134vh;
+    }
+    #project-tittle{
+        /* border: solid rgb(245, 6, 205); */
+        height: 20vh;
+    }
+    .portafolio-icon{
+        width: 15vw;
+        height: 10vh;
+    }
+    #project-content{
+        /* border: solid rgb(60, 255, 0); */
+        height: 114vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .actual-project {
+        /* border: solid blue; */
+        width: 100vw;
+        height: 38vh;
+        padding: 0;
+        flex-direction:column;
+        position: relative;
+    }
+    .project-img{
+        width: 90vw;
+        height: 30vh;
+        border-radius: 5vh;
+    }
+    .desktop{
+        /* border: solid purple; */
+        width: 15vw;
+        height: 7vh;
+        visibility: hidden;
+    }
+    .project-info{
+        top: 0vh;
+        transition: 0.4s;
+    }
+    #citalk:hover .project-info,
+    #wikiatletas:hover .project-info,
+    #mdlinks:hover .project-info{
+        width: 90vw;
+        height: 30vh;
+    }
+    #citalk:hover .desktop, 
+    #wikiatletas:hover .desktop,
+    #mdlinks:hover .desktop{
+        visibility: visible;
+    }
+    .demo-btn{
+        text-align: center;
+        font-size: 2.8vh;
+        line-height: 9vh;
+        text-decoration: none;
+        width: 30vw;
+        height: 7vh;
+        color: rgb(25, 25, 26);
+        background-color: rgba(247, 247, 247, 0.87);
+        border-radius: 5vh;
+        transition: 0.8s;
+    }
+    .demo-btn:hover{
+        background-color: rgb(117, 0, 212);
+        color: oldlace;
     }
     
 }
