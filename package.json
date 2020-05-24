@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Take a look to my projects!",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiorellaChilcon/PORTAFOLIO.git"
+  },
+  "keywords": [
+    "projects",
+    "portafolio"
+  ],
+  "author": "Fiorella Chilcón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FiorellaChilcon/PORTAFOLIO/issues"
+  },
+  "homepage": "https://github.com/FiorellaChilcon/PORTAFOLIO#readme"
+}

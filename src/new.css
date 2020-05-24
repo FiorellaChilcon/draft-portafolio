@@ -9,6 +9,11 @@ body{
     padding: 0;
     font-family: 'NATS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.flex-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav{
     z-index: 1;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(122,122,122,1);
@@ -21,26 +26,19 @@ nav{
     margin: 0;
     width: 100vw;
     height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
     width: 40vw;
     list-style: none;
     /* border: solid rgb(19, 202, 172); */
-    display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 0;
 }
 nav ul li{
     margin: 0;
     text-align: center;
     width: 12vw;
-    /* letter-spacing: 1vh; */
     font-weight: bold;
     border-right: solid 0.3vh rgb(66, 66, 66);
     /* border: solid red; */
@@ -57,17 +55,11 @@ main{
     /* border: solid rgb(19, 202, 172); */
     width: 100vw;
     height: 630vh;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #cover-img{
     width: 100vw;
     height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url('../img/laptop-bkg.jpg');
     background-size: 100vw 120vh;
     background-repeat: no-repeat;
@@ -77,10 +69,7 @@ main{
     width: 100vw;
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.849);
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: whitesmoke;
 }
 h1, h2{
@@ -100,10 +89,7 @@ h2{
     width: 100vw;
     height: 120vh;
     /* border: solid blue; */
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 h3{
     display: flex;
@@ -149,20 +135,14 @@ h3{
 }
 #projects{
     /* border: solid rgb(121, 112, 15); */
-    display: flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 150vh;
 }
 #project-tittle{
     /* border: solid rgb(245, 6, 205); */
     margin: 0;
-    display: flex;
     flex-direction:row;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 40vh;
 }
@@ -184,15 +164,12 @@ h3{
     width: 45vw;
     height: 53vh;
     padding: 0;
-    display: flex;
     flex-direction:column;
-    justify-content: center;
-    align-items: center;
     position: relative;
 }
 .project-img{
     width: 45vw;
-    max-height: 60vh;
+    height: 45vh;
     border-radius: 5vh;
 }
 .desktop{
@@ -213,9 +190,6 @@ h3{
     overflow: hidden;
     /* width: 45vw;
     height: 45vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* display: none; */
     transition: 0.4s;
 }
@@ -272,19 +246,13 @@ h3{
     height: 110vh;
     /* border: solid rgb(151, 10, 121); */
     width: 100vw;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 #soft-skills{
     height: 90vh;
 }
 .skill-icon{
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     /* border: solid rgb(197, 138, 9); */
     width: 40vw;
     height: 45vh;
@@ -363,26 +331,17 @@ h3{
 }
 .dev-item{
     box-sizing: border-box;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 54vw;
     height: 30vh;
     border-top: solid 2px rgb(245, 2, 95);
 }
 .dev-item div{
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center
 }
 footer{
     color: #ffffff;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 50vh;
     background-color: rgb(107, 13, 230)
@@ -410,83 +369,23 @@ footer div {
 .fa-linkedin:hover, .fa-github:hover{
     font-size: 7vh;
 }
-/* .project-container{
-    border: solid 1vh pink;
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.mySlides {
-    display: none
-}
-.img-projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slideshow-container {
-    border: solid red;
-    width: 68vw;
-    max-height: 70vh;
-    position: relative;
+@media  (min-width: 320px) and (max-width: 700px){
+    nav{
+        /* border: solid red; */
+        height: 10vh;
+    }
+    nav ul{
+        width: 100vw;
+        border: solid rgb(19, 202, 172);
+    }
+    nav ul li{
+        font-size: 2vh;
+        width: 25vw;
+        border: solid red;
+    }
+    nav ul li:hover{
+        font-size: 2.5vh;
+        /* color: rgb(5, 255, 213); */
+    }
     
 }
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top:30vh;
-  width: auto;
-  padding: 4vh;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.next {
-  right: 0vh;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-.dots{
-    border: solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 5vw;
-    width: 15vh;
-}
-.dot {
-  cursor: pointer;
-  height: 3vh;
-  width: 3vh;
-  background-color: #bbb;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} */
