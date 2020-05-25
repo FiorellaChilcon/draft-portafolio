@@ -29,17 +29,19 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
-    width: 40vw;
+    width: 56vw;
     list-style: none;
     /* border: solid rgb(19, 202, 172); */
     flex-direction: row;
     padding: 0;
 }
 nav ul li{
+    font-size: 3vh;
+    letter-spacing: 0.8vh;
     margin: 0;
     text-align: center;
-    width: 12vw;
-    font-weight: bold;
+    width: 14vw;
+    font-weight: normal;
     border-right: solid 0.3vh rgb(66, 66, 66);
     /* border: solid red; */
 }
@@ -47,7 +49,7 @@ nav ul li:last-child{
     border: none;
 }
 nav ul li:hover{
-    font-size: 3vh;
+    font-size: 3.5vh;
     cursor: pointer;
     /* color: rgb(5, 255, 213); */
 }
@@ -76,7 +78,7 @@ h1, h2{
     text-align: center;
     margin: 0;
     /* border: solid rgb(17, 238, 164); */
-    font-size: 3.5vh;
+    font-size: 4vh;
     font-weight: normal;
     color: rgb(246, 244, 244);
     color: whitesmoke;
@@ -126,11 +128,11 @@ h3{
 }
 #about-me-content p{
     /* border: solid palegoldenrod; */
-    font-size: 3.5vh;
+    font-size: 4vh;
     text-align: center;
     color: whitesmoke;
     width: 50vw;
-    height: 38vh;
+    height: 45vh;
     padding-top: auto;
 }
 #projects{
@@ -147,8 +149,9 @@ h3{
     height: 40vh;
 }
 .portafolio-icon{
-    width: 10vw;
-    height: 20vh;
+    margin-right: 3vh;
+    height: 18vh;
+    max-width: 20vw;
 }
 #project-content{
     /* border: solid rgb(60, 255, 0); */
@@ -188,9 +191,6 @@ h3{
     width: 0;
     height: 0;
     overflow: hidden;
-    /* width: 45vw;
-    height: 45vh; */
-    /* display: none; */
     transition: 0.4s;
 }
 #citalk:hover .project-info,
@@ -206,7 +206,7 @@ h3{
 }
 .demo-btn{
     text-align: center;
-    font-size: 2.8vh;
+    font-size: 3.2vh;
     line-height: 9vh;
     text-decoration: none;
     width: 10vw;
@@ -221,7 +221,7 @@ h3{
     color: oldlace;
 }
 #skills{
-     /* border: solid 1vh brown; */
+     border: solid 1vh brown;
      width: 100vw;
      height: 240vh;
 }
@@ -237,7 +237,7 @@ h3{
 #skills-content{
     width: 100vw;
     height: 210vh;
-    /* border: solid rgb(226, 16, 245); */
+    border: solid rgb(226, 16, 245);
     padding: 0;
     margin: 0;
     display: flex;
@@ -266,22 +266,24 @@ h3{
 .actual-skill-icon{
     margin: 0;
     /* border: solid rgb(197, 138, 9); */
-    width: 15vw;
+    max-width: 15vw;
     height: 30vh;
 }
 .soft-skill-item{
-    width: 6vw;
-    max-height: 30vh;
+    max-width: 12vw;
+    height: 12vh;
 }
 .soft-item{
     text-align: center;
     /* border: solid green; */
-    width: 16vw;
+    width: 18vw;
     height: 22vh;
 }
 .soft-item p{
+    font-size: 3vh;
     /* border: solid black; */
     margin: 0;
+    padding: 0;
 }
 .skill-items{
     display: flex;
@@ -294,35 +296,38 @@ h3{
     box-shadow: 0px 0px 30px -8px rgba(87,87,87,1);
     color: rgb(83, 83, 83);
     border-radius: 5vh;
-    width: 60vw;
-    height: 60vh;
+    width: 65vw;
+    height: 75vh;
 }
 #soft-skills .skill-items{
     padding-top: 6vh;
     justify-content: space-evenly;
     align-items: baseline;
 }
-.actual-item p, .dev-item p{
-    font-size: 3vh;
-    margin-top: 2vh 0 0 ;
-    border-radius: 2vh;
+.actual-item > p, .dev-item > p{
+    font-size: 3.5vh;
+    margin: 0;
     color:rgb(255, 98, 119);
     /* border: solid 2px rgb(109, 5, 206); */
 }
 .dev-item p{
-    margin-top: 0;
+    margin: 0;
+}
+.dev-item ul p{
+    text-decoration: underline;
 }
 .actual-item{
+    margin-top: 3vh;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 18vw;
-    height: 30vh;
+    height: 26vh;
     /* border: solid rgba(2, 255, 179, 0.397); */
 }
 .actual-item ul, .dev-item ul{
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin: 0;
     width: 16vw;
     text-align: center;
@@ -330,15 +335,31 @@ h3{
     list-style: none;
     /* border: solid rgb(147, 197, 9); */
 }
+.actual-item .framework{
+    font-size: 3vh;
+    color: rgb(83, 83, 83);
+}
 .dev-item{
+    /* border: solid rgba(2, 255, 179, 0.397); */
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
     box-sizing: border-box;
     flex-direction: column;
     width: 54vw;
-    height: 30vh;
+    height: 35vh;
     border-top: solid 2px rgb(245, 2, 95);
 }
+.dev-item ul{
+    width: 18vw;
+    /* border: solid rgb(147, 197, 9); */
+}
 .dev-item div{
+    display: flex;
+    justify-content: center;
+    width: 54vw;
     flex-direction: row;
+    /* border: solid rgb(147, 197, 9); */
 }
 footer{
     color: #ffffff;
@@ -380,12 +401,13 @@ footer div {
     nav ul li{
         font-size: 2vh;
         width: 22vw;
+        letter-spacing: 0vh;
     }
     nav ul li:hover{
         font-size: 2.5vh;
     }
     main{
-        height: 494vh;
+        height: 503vh;
     }
     #cover-img{
         height: 70vh;
@@ -395,14 +417,14 @@ footer div {
         height: 70vh;
     }
     h1, h2{
-        font-size: 2.5vh;
+        font-size: 3vh;
     }
     h2{
         width: 70vw;
     }
     #about-me{
         width: 100vw;
-        height: 100vh;
+        height: 104vh;
     }
     h3{
         height: 20vh;
@@ -411,16 +433,17 @@ footer div {
     #about-me-content{
         flex-direction: column;
         width: 100vw;
-        height: 80vh;
+        height: 84vh;
     }
     .my-photo{
         height: 30vh;
     }
     #about-me-content p{
-        font-size: 3vh;
+        /* border: solid red; */
+        font-size: 3.4vh;
         line-height: 5vh;
         width: 90vw;
-        height: 40vh;
+        height: 42vh;
         margin: 0;
     }
     #projects{
@@ -431,7 +454,7 @@ footer div {
     }
     .portafolio-icon{
         margin-right: 1vh;
-        width: 18vw;
+        max-width: 18vw;
         height: 10vh;
     }
     #project-content{
@@ -500,12 +523,12 @@ footer div {
         height: 20vh;
     }
     .actual-skill-icon{
-        width: 40vw;
+        max-width: 40vw;
         height: 20vh;
     }
     .soft-skill-item{
-        width: 6vw;
-        max-height: 30vh;
+        max-width: 25vw;
+        height: 10vh;
     }
     .soft-item{
         width: 40vw;
