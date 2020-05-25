@@ -60,7 +60,7 @@ main{
 #cover-img{
     width: 100vw;
     height: 120vh;
-    background-image: url('../img/laptop-bkg.jpg');
+    background-image: url('./img/laptop-bkg.jpg');
     background-size: 100vw 120vh;
     background-repeat: no-repeat;
 }
