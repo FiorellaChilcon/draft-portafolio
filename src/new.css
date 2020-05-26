@@ -381,11 +381,15 @@ footer p {
 footer div {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 12vw;
-    height: 15vh;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 10vw;
+    height: 12vh;
     /* border: solid rgb(5, 175, 90); */
+}
+footer img{
+    margin-top: 1vh;
+    width: 7vh;
 }
 .fa-linkedin, .fa-github{
     color: #ffffff;
@@ -636,8 +640,8 @@ footer div {
     }
     footer div {
         /* border: solid red; */
-        margin-top: 6vh;
-        width: 80vw;
+        margin: 0;
+        width: 30vw;
         height: 6vh;
     }
     .fa-linkedin, .fa-github{
