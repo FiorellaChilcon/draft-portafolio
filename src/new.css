@@ -26,6 +26,7 @@ nav{
     margin: 0;
     width: 100vw;
     height: 20vh;
+    top: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
@@ -54,9 +55,10 @@ nav ul li:hover{
     /* color: rgb(5, 255, 213); */
 }
 main{
+    margin-top: 20vh;
     /* border: solid rgb(19, 202, 172); */
     width: 100vw;
-    height: 630vh;
+    height: 640vh;
     flex-direction: column;
 }
 #cover-img{
@@ -139,14 +141,14 @@ h3{
     /* border: solid rgb(121, 112, 15); */
     flex-direction:column;
     width: 100vw;
-    height: 150vh;
+    height: 160vh;
 }
 #project-tittle{
     /* border: solid rgb(245, 6, 205); */
     margin: 0;
     flex-direction:row;
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
 }
 .portafolio-icon{
     margin-right: 3vh;
@@ -156,7 +158,7 @@ h3{
 #project-content{
     /* border: solid rgb(60, 255, 0); */
     width: 100vw;
-    height: 110vh;
+    height: 130vh;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
@@ -166,6 +168,7 @@ h3{
     /* border: solid blue; */
     width: 45vw;
     height: 53vh;
+    margin: auto;
     padding: 0;
     flex-direction:column;
     position: relative;
@@ -221,14 +224,14 @@ h3{
     color: oldlace;
 }
 #skills{
-     border: solid 1vh brown;
+     /* border: solid 1vh brown; */
      width: 100vw;
      height: 240vh;
 }
 #skills h3{
     box-sizing: border-box;
-    border-bottom: solid 2.5px rgb(130, 4, 248);
-    border-top: solid 2.5px rgb(130, 4, 248);
+    border-bottom: solid 2px rgb(130, 4, 248);
+    border-top: solid 2px rgb(130, 4, 248);
     width: 100vw;
     height: 30vh;
     padding: 0;
@@ -237,7 +240,7 @@ h3{
 #skills-content{
     width: 100vw;
     height: 210vh;
-    border: solid rgb(226, 16, 245);
+    /* border: solid rgb(226, 16, 245); */
     padding: 0;
     margin: 0;
     display: flex;
@@ -406,10 +409,12 @@ footer div {
     nav ul li:hover{
         font-size: 2.5vh;
     }
-    main{
-        height: 503vh;
+    main{ 
+        margin-top: 15vh;
+        height: 680vh;
     }
     #cover-img{
+        /* border: solid red; */
         height: 70vh;
         background-size: 100vw 70vh;
     }
@@ -424,33 +429,39 @@ footer div {
     }
     #about-me{
         width: 100vw;
-        height: 104vh;
+        height: 120vh;
     }
     h3{
         height: 20vh;
-        font-size: 4vh;
+        font-size: 4.5vh;
     }
     #about-me-content{
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         width: 100vw;
-        height: 84vh;
+        height: 100vh;
     }
     .my-photo{
         height: 30vh;
     }
     #about-me-content p{
         /* border: solid red; */
-        font-size: 3.4vh;
+        font-size: 3.7vh;
         line-height: 5vh;
         width: 90vw;
-        height: 42vh;
+        height: 45vh;
         margin: 0;
+        margin-top: 5vh;
     }
     #projects{
-        height: 134vh;
+        height: 180vh;
+        /* border: solid rgb(123, 212, 6); */
+        justify-content: unset;
     }
     #project-tittle{
         height: 20vh;
+        /* border: solid red; */
     }
     .portafolio-icon{
         margin-right: 1vh;
@@ -458,14 +469,17 @@ footer div {
         height: 10vh;
     }
     #project-content{
-        height: 114vh;
+        /* border: solid rgb(111, 0, 255); */
+        height: 160vh;
         flex-wrap: nowrap;
         flex-direction: column;
     }
     .actual-project {
+        margin-top: 0;
+        /* border: solid red;  */
         width: 100vw;
         height: 37vh;
-        flex-direction:column;
+        flex-direction: column;
     }
     .project-img{
         width: 90vw;
@@ -492,35 +506,40 @@ footer div {
         height: 7vh;
     }
     #skills{
+        /* border: solid orange; */
          width: 100vw;
-         height: 170vh;
+         height: 310vh;
+         font-size: 3;
     }
     #skills h3{
+        font-size: 4.5;
         width: 100vw;
         height: 20vh;
     }
     #skills-content{
-        justify-content: space-evenly;
         width: 100vw;
-        height: 150vh;
-        padding: 0;
-        margin: 0;
+        height: 290vh;
+        justify-content: space-evenly;
+        /* border: solid rgb(0, 0, 0); */
     }
     #hard-skills, #soft-skills{
-        height: 78vh;
+        height: 140vh;
         width: 100vw;
         flex-direction: column;
+        /* border: solid rgb(0, 255, 106); */
     }
     #soft-skills{
-        height: 60vh;
+        height: 140vh;
     }
     .skill-icon{
+        /* border: solid orange; */
         width: 40vw;
-        height: 20vh;
+        height: 24vh;
+        margin: 0;
     }
     #hard-skills .skill-icon{
         width: 40vw;
-        height: 20vh;
+        height: 22vh;
     }
     .actual-skill-icon{
         max-width: 40vw;
@@ -531,54 +550,93 @@ footer div {
         height: 10vh;
     }
     .soft-item{
-        width: 40vw;
-        height: 12vh;
+        margin: 0;
+        /* border: solid blue; */
+        width: 80vw;
+        height: 18vh;
     }
     .soft-item p{
-        font-size: 2.5;
+        /* border: solid blue; */
+        padding: 0;
+        margin: 0;
+        font-size: 3;
     }
     .skill-items{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
         width: 95vw;
-        height: 55vh;
+        height: 115vh;
     }
     #soft-skills .skill-items{
-        height: 40vh;
-        padding-top: 3vh;
+        padding: 0;
+        height: 110vh;
+        align-items: center;
+        justify-content: space-evenly;
+        /* padding-top: 3vh; */
     }
     .actual-item p, .dev-item p{
-        font-size: 2.5vh;
+        font-size: 3.5vh;
         border-radius: 2vh;
     }
-    .dev-item p{
-        margin-top: 3vh;
-    }
     .actual-item{
-        width: 31vw;
-        height: 20vh;
+        padding: 0;
+        margin: 0;
+        /* border: solid red; */
+        width: 80vw;
+        height: 24vh;
+    }
+    .second-item{
+        height: 19vh;
+    }
+    .last-item{
+        height: 14vh;
+
     }
     .actual-item ul, .dev-item ul{
+        width: 70vw;
+        /* border: solid red; */
+        line-height: 5.5vh;
         height: 15vh;
-        font-size: 2.4vh;
-        width: 28vw;
+        font-size: 3vh;
     }
     .dev-item{
+        margin: 0;
+        padding: 0;
+        border: none;
         width: 90vw;
-        height: 25vh;
+        height: 43vh;
+        /* border: solid red; */
+    }
+    .dev-item div{
+        /* border: solid rgb(12, 250, 210); */
+        width: 90vw;
+        flex-direction: column;
+        height: 35vh;
     }
     .dev-item ul{
-        height: 20vh;
-        width: 45vw;
+        /* border: solid red; */
+        height: 18vh;
+        width: 90vw;
+    }
+    .dev-item div ul p{
+        font-size: 3vh;
     }
     footer{
-        height: 25vh;
+        height: 30vh;
     }
     footer p {
+        /* border: solid red; */
         margin: 0;
-        font-size: 2.8vh;
+        font-size: 3vh;
         height: 6vh;
     }
+    footer p:first-child{
+        margin-top: 2vh;
+    }
     footer div {
-        margin-top: 1vh;
+        /* border: solid red; */
+        margin-top: 6vh;
         width: 80vw;
         height: 6vh;
     }
