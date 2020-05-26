@@ -95,13 +95,17 @@ h2{
     /* border: solid blue; */
     flex-direction: column;
 }
+#about-me h3{
+    width: 100vh;
+    background-color: rgb(252, 245, 244);
+    height: 40vh;
+}
 h3{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     align-self: center;
-    height: 40vh;
     font-size: 8vh;
     /* border: solid blue; */
     letter-spacing: 1vh;
@@ -149,6 +153,7 @@ h3{
     flex-direction:row;
     width: 100vw;
     height: 30vh;
+    background-color: rgb(252, 245, 244);
 }
 .portafolio-icon{
     margin-right: 3vh;
@@ -230,8 +235,7 @@ h3{
 }
 #skills h3{
     box-sizing: border-box;
-    border-bottom: solid 2px rgb(130, 4, 248);
-    border-top: solid 2px rgb(130, 4, 248);
+    background-color: rgb(252, 245, 244);
     width: 100vw;
     height: 30vh;
     padding: 0;
@@ -316,8 +320,8 @@ h3{
 .dev-item p{
     margin: 0;
 }
-.dev-item ul p{
-    text-decoration: underline;
+.slash{
+    color:rgb(255, 98, 119);
 }
 .actual-item{
     margin-top: 3vh;
@@ -374,9 +378,10 @@ footer{
 footer p {
     word-spacing: 1vh;
     margin: 1vh;
+    padding: 0;
     /* border: solid red; */
     font-size: 3.5vh;
-    height: 6vh;
+    height:6vh;
 }
 footer div {
     display: flex;
@@ -385,11 +390,9 @@ footer div {
     align-items: flex-end;
     width: 10vw;
     height: 12vh;
-    /* border: solid rgb(5, 175, 90); */
 }
 footer img{
-    margin-top: 1vh;
-    width: 7vh;
+    width: 4vh;
 }
 .fa-linkedin, .fa-github{
     color: #ffffff;
@@ -454,7 +457,7 @@ footer img{
         font-size: 3.7vh;
         line-height: 5vh;
         width: 90vw;
-        height: 45vh;
+        height: auto;
         margin: 0;
         margin-top: 5vh;
     }
@@ -633,16 +636,15 @@ footer img{
         /* border: solid red; */
         margin: 0;
         font-size: 3vh;
-        height: 6vh;
+        height: auto;
     }
     footer p:first-child{
         margin-top: 2vh;
     }
     footer div {
         /* border: solid red; */
-        margin: 0;
         width: 30vw;
-        height: 6vh;
+        height: 8vh;
     }
     .fa-linkedin, .fa-github{
         font-size: 5vh;
