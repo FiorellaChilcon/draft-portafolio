@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/FiorellaChilcon/PORTAFOLIO/issues"
   },
-  "homepage": "https://github.com/FiorellaChilcon/PORTAFOLIO#readme"
+  "homepage": "https://github.com/FiorellaChilcon/PORTAFOLIO#readme",
+  "devDependencies": {
+    "eslint-plugin-html": "^6.0.2"
+  }
 }

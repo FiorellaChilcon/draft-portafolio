@@ -4,6 +4,9 @@
     src: url(../nats-cufonfonts/NATS-Regular.ttf);
     font-weight: bold;
   }
+html{
+      overflow-x: hidden;
+}
 body{
     margin: 0;
     padding: 0;
@@ -20,7 +23,6 @@ nav{
     -moz-box-shadow: 0px 5px 5px 0px rgba(122,122,122,1);
     box-shadow: 0px 5px 5px 0px rgba(122,122,122,1);
     position: fixed;
-    /* border: solid red; */
     background-color: rgb(249, 253, 253);
     margin: 0;
     width: 100vw;
@@ -29,21 +31,20 @@ nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
-    width: 56vw;
+    width: 100vw;
     list-style: none;
-    /* border: solid rgb(19, 202, 172); */
     flex-direction: row;
     padding: 0;
 }
 nav ul li{
+    width: auto;
+    padding: 0 3vh;
     font-size: 3vh;
     letter-spacing: 0.8vh;
     margin: 0;
     text-align: center;
-    width: 14vw;
     font-weight: normal;
     border-right: solid 0.3vh rgb(66, 66, 66);
-    /* border: solid red; */
 }
 nav ul li:last-child{
     border: none;
@@ -51,7 +52,6 @@ nav ul li:last-child{
 nav ul li:hover{
     font-size: 3.5vh;
     cursor: pointer;
-    /* color: rgb(5, 255, 213); */
 }
 a{
     text-decoration: none;
@@ -59,9 +59,8 @@ a{
 }
 main{
     margin-top: 20vh;
-    /* border: solid rgb(19, 202, 172); */
     width: 100vw;
-    height: 645vh;
+    height: 640vh;
     flex-direction: column;
 }
 #cover-img{
@@ -72,7 +71,6 @@ main{
     background-repeat: no-repeat;
 }
 #cover-page{
-    /* border: solid rgb(16, 19, 18); */
     width: 100vw;
     height: 120vh;
     background-color: rgba(0, 0, 0, 0.849);
@@ -82,7 +80,6 @@ main{
 h1, h2{
     text-align: center;
     margin: 0;
-    /* border: solid rgb(17, 238, 164); */
     font-size: 4vh;
     font-weight: normal;
     color: rgb(246, 244, 244);
@@ -95,7 +92,6 @@ h2{
 #about-me{
     width: 100vw;
     height: 115vh;
-    /* border: solid blue; */
     flex-direction: column;
 }
 #about-me h3{
@@ -110,7 +106,6 @@ h3{
     align-self: center;
     font-size: 8vh;
     height: 35vh;
-    /* border: solid blue; */
     letter-spacing: 1vh;
 }
 #about-me-content{
@@ -136,7 +131,6 @@ h3{
 
 }
 #about-me-content p{
-    /* border: solid palegoldenrod; */
     font-size: 4vh;
     text-align: center;
     color: whitesmoke;
@@ -145,13 +139,11 @@ h3{
     padding-top: auto;
 }
 #projects{
-    /* border: solid rgb(121, 112, 15); */
     flex-direction:column;
     width: 100vw;
-    height: 165vh;
+    height: 155vh;
 }
 #project-tittle{
-    /* border: solid rgb(245, 6, 205); */
     margin: 0;
     flex-direction:row;
     width: 100vw;
@@ -164,16 +156,14 @@ h3{
     max-width: 20vw;
 }
 #project-content{
-    /* border: solid rgb(60, 255, 0); */
     width: 100vw;
-    height: 130vh;
+    height: 120vh;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
 }
 .actual-project {
-    /* border: solid blue; */
     width: 45vw;
     height: 53vh;
     margin: auto;
@@ -187,7 +177,6 @@ h3{
     border-radius: 5vh;
 }
 .desktop{
-    /* border: solid purple; */
     width: 6vw;
     height: 8vh;
     visibility: hidden;
@@ -196,7 +185,6 @@ h3{
     top: 0;
     margin: 0;
     border-radius: 5vh;
-    /* border: solid brown; */
     background-color: rgba(19, 19, 18, 0.664);
     position: absolute;
     width: 0;
@@ -232,9 +220,8 @@ h3{
     color: oldlace;
 }
 #skills{
-     /* border: solid 1vh brown; */
      width: 100vw;
-     height: 245vh;
+     height: 250vh;
 }
 #skills h3{
     box-sizing: border-box;
@@ -245,36 +232,25 @@ h3{
 }
 #skills-content{
     width: 100vw;
-    height: 210vh;
-    /* border: solid rgb(226, 16, 245); */
+    height: 215vh;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
-#hard-skills, #soft-skills{
-    height: 110vh;
-    /* border: solid rgb(151, 10, 121); */
+#hard-skills {
     width: 100vw;
     flex-direction: column;
+    height: 105vh;
 }
 #soft-skills{
-    height: 90vh;
-}
-.skill-icon{
-    padding: 0;
-    /* border: solid rgb(197, 138, 9); */
-    width: 40vw;
-    height: 45vh;
-}
-#hard-skills .skill-icon{
-    width: 40vw;
-    height: 35vh;
-    /* border: solid rgb(197, 138, 9); */
+    width: 100vw;
+    flex-direction: column;
+    height: 95vh;
 }
 .actual-skill-icon{
     margin: 0;
-    /* border: solid rgb(197, 138, 9); */
     max-width: 15vw;
     height: 30vh;
 }
@@ -284,13 +260,11 @@ h3{
 }
 .soft-item{
     text-align: center;
-    /* border: solid green; */
     width: 18vw;
     height: 22vh;
 }
 .soft-item p{
     font-size: 3vh;
-    /* border: solid black; */
     margin: 0;
     padding: 0;
 }
@@ -309,6 +283,7 @@ h3{
     height: 75vh;
 }
 #soft-skills .skill-items{
+    height: 65vh;
     padding-top: 6vh;
     justify-content: space-evenly;
     align-items: baseline;
@@ -317,7 +292,6 @@ h3{
     font-size: 3.5vh;
     margin: 0;
     color:rgb(255, 98, 119);
-    /* border: solid 2px rgb(109, 5, 206); */
 }
 .dev-item p{
     margin: 0;
@@ -333,7 +307,6 @@ h3{
     flex-direction: column;
     width: 18vw;
     height: 26vh;
-    /* border: solid rgba(2, 255, 179, 0.397); */
 }
 .actual-item ul, .dev-item ul{
     font-size: 3vh;
@@ -342,14 +315,12 @@ h3{
     text-align: center;
     padding: 0;
     list-style: none;
-    /* border: solid rgb(147, 197, 9); */
 }
 .actual-item .framework{
     font-size: 3vh;
     color: rgb(83, 83, 83);
 }
 .dev-item{
-    /* border: solid rgba(2, 255, 179, 0.397); */
     display: flex;
     align-items: center;
     padding-top: 5vh;
@@ -361,29 +332,26 @@ h3{
 }
 .dev-item ul{
     width: 18vw;
-    /* border: solid rgb(147, 197, 9); */
 }
 .dev-item div{
     display: flex;
     justify-content: center;
     width: 54vw;
     flex-direction: row;
-    /* border: solid rgb(147, 197, 9); */
 }
 footer{
     color: #ffffff;
     flex-direction: column;
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     background-color: rgb(107, 13, 230)
 }
 footer p {
     word-spacing: 1vh;
     margin: 1vh;
     padding: 0;
-    /* border: solid red; */
     font-size: 3.5vh;
-    height:6vh;
+    height: 6vh;
 }
 footer div {
     display: flex;
@@ -409,12 +377,9 @@ footer img{
     nav{
         height: 15vh;
     }
-    nav ul{
-        width: 100vw;
-    }
     nav ul li{
         font-size: 2vh;
-        width: 22vw;
+        padding: 0 1vh;
         letter-spacing: 0vh;
     }
     nav ul li:hover{
@@ -422,10 +387,9 @@ footer img{
     }
     main{ 
         margin-top: 15vh;
-        height: 680vh;
+        height: 670vh;
     }
     #cover-img{
-        /* border: solid red; */
         height: 70vh;
         background-size: 100vw 70vh;
     }
@@ -457,7 +421,6 @@ footer img{
         height: 30vh;
     }
     #about-me-content p{
-        /* border: solid red; */
         font-size: 3.7vh;
         line-height: 5vh;
         width: 90vw;
@@ -467,12 +430,9 @@ footer img{
     }
     #projects{
         height: 180vh;
-        /* border: solid rgb(123, 212, 6); */
-        justify-content: unset;
     }
     #project-tittle{
         height: 20vh;
-        /* border: solid red; */
     }
     .portafolio-icon{
         margin-right: 1vh;
@@ -480,14 +440,11 @@ footer img{
         height: 10vh;
     }
     #project-content{
-        /* border: solid rgb(111, 0, 255); */
         height: 160vh;
         flex-wrap: nowrap;
         flex-direction: column;
     }
     .actual-project {
-        margin-top: 0;
-        /* border: solid red;  */
         width: 100vw;
         height: 37vh;
         flex-direction: column;
@@ -517,39 +474,24 @@ footer img{
         height: 7vh;
     }
     #skills{
-        /* border: solid orange; */
-         width: 100vw;
-         height: 310vh;
+         height: 300vh;
          font-size: 3;
     }
     #skills h3{
         font-size: 4.5;
-        width: 100vw;
-        height: 20vh;
     }
     #skills-content{
         width: 100vw;
-        height: 290vh;
-        justify-content: space-evenly;
-        /* border: solid rgb(0, 0, 0); */
+        height: 280vh;
     }
     #hard-skills, #soft-skills{
-        height: 140vh;
+        height: 135vh;
         width: 100vw;
-        flex-direction: column;
-        /* border: solid rgb(0, 255, 106); */
     }
     #soft-skills{
-        height: 140vh;
-    }
-    .skill-icon{
-        /* border: solid orange; */
-        width: 40vw;
-        height: 24vh;
-        margin: 0;
+        height: 130vh;
     }
     #hard-skills .skill-icon{
-        width: 40vw;
         height: 22vh;
     }
     .actual-skill-icon{
@@ -562,14 +504,10 @@ footer img{
     }
     .soft-item{
         margin: 0;
-        /* border: solid blue; */
         width: 80vw;
         height: 18vh;
     }
     .soft-item p{
-        /* border: solid blue; */
-        padding: 0;
-        margin: 0;
         font-size: 3;
     }
     .skill-items{
@@ -583,8 +521,6 @@ footer img{
         padding: 0;
         height: 110vh;
         align-items: center;
-        justify-content: space-evenly;
-        /* padding-top: 3vh; */
     }
     .actual-item p, .dev-item p{
         font-size: 3.5vh;
@@ -593,7 +529,6 @@ footer img{
     .actual-item{
         padding: 0;
         margin: 0;
-        /* border: solid red; */
         width: 80vw;
         height: 24vh;
     }
@@ -606,7 +541,6 @@ footer img{
     }
     .actual-item ul, .dev-item ul{
         width: 70vw;
-        /* border: solid red; */
         line-height: 5.5vh;
         height: 15vh;
         font-size: 3vh;
@@ -617,17 +551,14 @@ footer img{
         border: none;
         width: 90vw;
         height: 43vh;
-        /* border: solid red; */
     }
     .dev-item div{
-        /* border: solid rgb(12, 250, 210); */
         width: 90vw;
         flex-direction: column;
         height: 35vh;
     }
     .dev-item ul{
-        /* border: solid red; */
-        height: 18vh;
+        height: 17vh;
         width: 90vw;
     }
     .dev-item div ul p{
@@ -637,7 +568,6 @@ footer img{
         height: 30vh;
     }
     footer p {
-        /* border: solid red; */
         margin: 0;
         font-size: 3vh;
         height: auto;
@@ -649,7 +579,6 @@ footer img{
         width: 3vh;
     }
     footer div {
-        /* border: solid red; */
         width: 30vw;
         height: 8vh;
     }
