@@ -54,6 +54,9 @@ nav ul li:hover{
     cursor: pointer;
     /* color: rgb(5, 255, 213); */
 }
+a{
+    text-decoration: none;
+}
 main{
     margin-top: 20vh;
     /* border: solid rgb(19, 202, 172); */
@@ -96,7 +99,7 @@ h2{
     flex-direction: column;
 }
 #about-me h3{
-    width: 100vh;
+    width: 100vw;
     background-color: rgb(252, 245, 244);
 }
 h3{
