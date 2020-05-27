@@ -22,7 +22,6 @@ nav{
     position: fixed;
     /* border: solid red; */
     background-color: rgb(249, 253, 253);
-    color: rgb(87, 84, 84);
     margin: 0;
     width: 100vw;
     height: 20vh;
@@ -56,6 +55,7 @@ nav ul li:hover{
 }
 a{
     text-decoration: none;
+    color: rgb(87, 84, 84);
 }
 main{
     margin-top: 20vh;
@@ -394,6 +394,8 @@ footer div {
     height: 12vh;
 }
 footer img{
+    position: relative;
+    top: 1vh;
     width: 4vh;
 }
 .fa-linkedin, .fa-github{
@@ -643,6 +645,9 @@ footer img{
     footer p:first-child{
         margin-top: 2vh;
     }
+    footer img{
+        width: 3vh;
+    }
     footer div {
         /* border: solid red; */
         width: 30vw;
@@ -651,25 +656,4 @@ footer img{
     .fa-linkedin, .fa-github{
         font-size: 5vh;
     }
-}
-
-@media (min-width: 700px) and (max-width: 1024px) { 
-    .actual-skill-icon{
-        width: 28vw;
-    }
-    .portafolio-icon{
-        width: 15vw;
-    }
-    .project-img{
-        width: 85vw;
-    }
-    .desktop{
-        width: 13vw;
-    }
-    #citalk:hover .project-info,
-    #wikiatletas:hover .project-info,
-    #mdlinks:hover .project-info{
-        width: 85vw;
-    }
-
 }
