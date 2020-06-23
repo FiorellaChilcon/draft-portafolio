@@ -172,9 +172,10 @@ h3{
     position: relative;
 }
 .project-img{
+   box-shadow: 0px 0px 22px -8px rgba(87,87,87,1);
     width: 45vw;
     height: 45vh;
-    border-radius: 5vh;
+    border-radius: 25px;
 }
 .desktop{
     width: 6vw;
@@ -184,7 +185,7 @@ h3{
 .project-info{
     top: 0;
     margin: 0;
-    border-radius: 5vh;
+    border-radius: 25px;
     background-color: rgba(19, 19, 18, 0.664);
     position: absolute;
     width: 0;
@@ -193,12 +194,14 @@ h3{
     transition: 0.4s;
 }
 #citalk:hover .project-info,
+#bunker:hover .project-info,
 #wikiatletas:hover .project-info,
 #mdlinks:hover .project-info{
     width: 45vw;
     height: 45vh;
 }
 #citalk:hover .desktop, 
+#bunker:hover .desktop,
 #wikiatletas:hover .desktop,
 #mdlinks:hover .desktop{
     visibility: visible;
@@ -251,12 +254,12 @@ h3{
 }
 .actual-skill-icon{
     margin: 0;
-    max-width: 15vw;
-    height: 30vh;
+    height: 200px;
+    width: 200px;
 }
 .soft-skill-item{
-    max-width: 12vw;
-    height: 12vh;
+    width: auto;
+    height: 80px;
 }
 .soft-item{
     text-align: center;
@@ -343,23 +346,23 @@ footer{
     color: #ffffff;
     flex-direction: column;
     width: 100vw;
-    height: 40vh;
+    height: 280px;
     background-color: rgb(107, 13, 230)
 }
 footer p {
-    word-spacing: 1vh;
+    word-spacing: 8px;
     margin: 1vh;
     padding: 0;
-    font-size: 3.5vh;
-    height: 6vh;
+    font-size: 24px;
+    height: 50px;
 }
 footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    width: 10vw;
-    height: 12vh;
+    width: 120px;
+    height: 60px;
 }
 footer img{
     position: relative;
@@ -368,25 +371,25 @@ footer img{
 }
 .fa-linkedin, .fa-github{
     color: #ffffff;
-    font-size: 6vh;
+    font-size: 35px;
 }
 .fa-linkedin:hover, .fa-github:hover{
-    font-size: 7vh;
+    font-size: 40px;
 }
 @media  (min-width: 320px) and (max-width: 1024px){
     nav{
-        height: 15vh;
+        height: 110px;
     }
     nav ul li{
-        font-size: 2vh;
-        padding: 0 1vh;
-        letter-spacing: 0vh;
+        font-size: 17px;
+        padding: 0 8px;
+        letter-spacing: 0;
     }
     nav ul li:hover{
-        font-size: 2.5vh;
+        font-size: 16px;
     }
     main{ 
-        margin-top: 15vh;
+        margin-top: 110px;
         height: 670vh;
     }
     #cover-img{
@@ -397,7 +400,7 @@ footer img{
         height: 70vh;
     }
     h1, h2{
-        font-size: 3vh;
+        font-size: 20px;
     }
     h2{
         width: 70vw;
@@ -408,7 +411,7 @@ footer img{
     }
     h3{
         height: 20vh;
-        font-size: 4.5vh;
+        font-size: 30px;
     }
     #about-me-content{
         display: flex;
@@ -421,8 +424,8 @@ footer img{
         height: 30vh;
     }
     #about-me-content p{
-        font-size: 3.7vh;
-        line-height: 5vh;
+        font-size: 24px;
+        line-height: 35px;
         width: 90vw;
         height: auto;
         margin: 0;
@@ -446,26 +449,26 @@ footer img{
     }
     .actual-project {
         width: 100vw;
-        height: 37vh;
+        height: 230px;
         flex-direction: column;
     }
     .project-img{
-        width: 90vw;
-        height: 30vh;
-        border-radius: 5vh;
+      width: 350px;
+      height: 200px;
     }
     .desktop{
-        width: 15vw;
-        height: 7vh;
+        width: 50px;
+        height: 30px;
     }
     .project-info{
         top: 0vh;
     }
     #citalk:hover .project-info,
+    #bunker:hover .project-info,
     #wikiatletas:hover .project-info,
     #mdlinks:hover .project-info{
-        width: 90vw;
-        height: 30vh;
+      width: 350px;
+      height: 200px;
     }
     .demo-btn{
         font-size: 2.8vh;
@@ -495,12 +498,12 @@ footer img{
         height: 22vh;
     }
     .actual-skill-icon{
-        max-width: 40vw;
-        height: 20vh;
+        width: 130px;
+        height: 130px;
     }
     .soft-skill-item{
-        max-width: 25vw;
-        height: 10vh;
+        width: 50px;
+        height: 50px;
     }
     .soft-item{
         margin: 0;
@@ -532,12 +535,8 @@ footer img{
         width: 80vw;
         height: 24vh;
     }
-    .second-item{
-        height: 19vh;
-    }
     .last-item{
         height: 14vh;
-
     }
     .actual-item ul, .dev-item ul{
         width: 70vw;
@@ -569,7 +568,7 @@ footer img{
     }
     footer p {
         margin: 0;
-        font-size: 3vh;
+        font-size: 22px;
         height: auto;
     }
     footer p:first-child{
@@ -579,10 +578,10 @@ footer img{
         width: 3vh;
     }
     footer div {
-        width: 30vw;
-        height: 8vh;
+        width: 100px;
+        height: 50px;
     }
     .fa-linkedin, .fa-github{
-        font-size: 5vh;
+        font-size: 30px;
     }
 }
