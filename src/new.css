@@ -8,6 +8,8 @@ html{
       overflow-x: hidden;
 }
 body{
+    width: 100%;
+    min-width: 350px;
     margin: 0;
     padding: 0;
     font-family: 'NATS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -25,32 +27,32 @@ nav{
     position: fixed;
     background-color: rgb(249, 253, 253);
     margin: 0;
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 140px;
     top: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
-    width: 100vw;
+    width: 100%;
     list-style: none;
     flex-direction: row;
     padding: 0;
 }
 nav ul li{
     width: auto;
-    padding: 0 3vh;
-    font-size: 3vh;
-    letter-spacing: 0.8vh;
+    padding: 0 28px;
+    font-size: 18px;
+    letter-spacing: 6px;
     margin: 0;
     text-align: center;
     font-weight: normal;
-    border-right: solid 0.3vh rgb(66, 66, 66);
+    border-right: solid 1.5px rgb(82, 81, 81);
 }
 nav ul li:last-child{
     border: none;
 }
 nav ul li:hover{
-    font-size: 3.5vh;
+    font-size: 20px;
     cursor: pointer;
 }
 a{
@@ -58,21 +60,22 @@ a{
     color: rgb(87, 84, 84);
 }
 main{
-    margin-top: 20vh;
-    width: 100vw;
-    height: 640vh;
+    margin-top: 140px;
+    width: 100%;
+    height: auto;
     flex-direction: column;
 }
+/* --------------------PORTADA----------------------- */
 #cover-img{
-    width: 100vw;
-    height: 120vh;
+    width: 100%;
+    height: 650px;
     background-image: url('./img/laptop-bkg.jpg');
-    background-size: 100vw 120vh;
+    background-size: 100vw 650px;
     background-repeat: no-repeat;
 }
 #cover-page{
-    width: 100vw;
-    height: 120vh;
+    width: 100%;
+    height: 650px;
     background-color: rgba(0, 0, 0, 0.849);
     flex-direction: column;
     color: whitesmoke;
@@ -80,22 +83,22 @@ main{
 h1, h2{
     text-align: center;
     margin: 0;
-    font-size: 4vh;
+    font-size: 28px;
     font-weight: normal;
     color: rgb(246, 244, 244);
     color: whitesmoke;
 }
 h2{
-    width: 30vw;
+    width: 500px;
     border-top: 2px solid rgb(122, 5, 255)
 }
 #about-me{
-    width: 100vw;
-    height: 115vh;
+    width: 100%;
+    height: auto;
     flex-direction: column;
 }
 #about-me h3{
-    width: 100vw;
+    width: 100%;
     background-color: rgb(252, 245, 244);
 }
 h3{
@@ -104,8 +107,8 @@ h3{
     align-items: center;
     margin: 0;
     align-self: center;
-    font-size: 8vh;
-    height: 35vh;
+    font-size: 36px;
+    height: 200px;
     letter-spacing: 1vh;
 }
 #about-me-content{
@@ -113,8 +116,9 @@ h3{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
     background-color: rgb(117, 18, 248);
 }
 .my-photo:hover, .actual-skill-icon:hover{
@@ -128,58 +132,59 @@ h3{
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
-
+}
+.my-photo{
+  max-width: 50%;
+  height: 250px;
 }
 #about-me-content p{
-    font-size: 4vh;
+    font-size: 25px;
     text-align: center;
     color: whitesmoke;
-    width: 50vw;
-    height: 45vh;
-    padding-top: auto;
+    width: 50%;
 }
 #projects{
     flex-direction:column;
-    width: 100vw;
-    height: 155vh;
+    width: 100%;
+    height: auto;
 }
 #project-tittle{
     margin: 0;
-    flex-direction:row;
-    width: 100vw;
-    height: 35vh;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
     background-color: rgb(252, 245, 244);
 }
 .portafolio-icon{
-    margin-right: 3vh;
-    height: 18vh;
-    max-width: 20vw;
+    margin-right: 15px;
+    height: 90px;
 }
 #project-content{
-    width: 100vw;
-    height: 120vh;
+    width: 100%;
+    margin-top:  50px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
 }
 .actual-project {
-    width: 45vw;
-    height: 53vh;
-    margin: auto;
+    width: 45%;
+    height: auto;
+    margin: 18px 0;
     padding: 0;
     flex-direction:column;
     position: relative;
 }
 .project-img{
-   box-shadow: 0px 0px 22px -8px rgba(87,87,87,1);
-    width: 45vw;
-    height: 45vh;
+    box-shadow: 0px 0px 22px -8px rgba(87,87,87,1);
+    width: 100%;
+    height: auto;
     border-radius: 25px;
 }
 .desktop{
-    width: 6vw;
-    height: 8vh;
+    width: 60px;
+    height: 50px;
     visibility: hidden;
 }
 .project-info{
@@ -197,8 +202,8 @@ h3{
 #bunker:hover .project-info,
 #wikiatletas:hover .project-info,
 #mdlinks:hover .project-info{
-    width: 45vw;
-    height: 45vh;
+    width: 100%;
+    height: calc(100% - 50px);
 }
 #citalk:hover .desktop, 
 #bunker:hover .desktop,
@@ -208,14 +213,14 @@ h3{
 }
 .demo-btn{
     text-align: center;
-    font-size: 3.2vh;
-    line-height: 9vh;
+    font-size: 20px;
+    line-height: 60px;
     text-decoration: none;
-    width: 10vw;
-    height: 9vh;
+    width: 140px;
+    height: 60px;
     color: rgb(25, 25, 26);
     background-color: rgba(247, 247, 247, 0.87);
-    border-radius: 5vh;
+    border-radius: 30px;
     transition: 0.8s;
 }
 .demo-btn:hover{
@@ -223,76 +228,97 @@ h3{
     color: oldlace;
 }
 #skills{
-     width: 100vw;
-     height: 250vh;
+     width: 100%;
+     height: auto;
 }
 #skills h3{
     box-sizing: border-box;
     background-color: rgb(252, 245, 244);
-    width: 100vw;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
 #skills-content{
-    width: 100vw;
-    height: 215vh;
-    padding: 0;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
-#hard-skills {
-    width: 100vw;
+#hard-skills, #soft-skills {
+    margin: 20px 0;
+    width: 100%;
     flex-direction: column;
-    height: 105vh;
-}
-#soft-skills{
-    width: 100vw;
-    flex-direction: column;
-    height: 95vh;
+    height: auto;
 }
 .actual-skill-icon{
-    margin: 0;
+    margin-bottom: 5px;
     height: 200px;
     width: 200px;
 }
 .soft-skill-item{
-    width: auto;
+    /* border: solid red; */
+    width: 82px;
     height: 80px;
 }
 .soft-item{
+  /* border: solid rgb(0, 255, 115); */
     text-align: center;
-    width: 18vw;
-    height: 22vh;
+    width: 250px;
+    height: 150px;
 }
 .soft-item p{
-    font-size: 3vh;
+    font-size: 21px;
     margin: 0;
     padding: 0;
 }
 .skill-items{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
     box-sizing: border-box;
     -webkit-box-shadow: 0px 0px 30px -8px rgba(87,87,87,1);
     -moz-box-shadow: 0px 0px 30px -8px rgba(87,87,87,1);
     box-shadow: 0px 0px 30px -8px rgba(87,87,87,1);
     color: rgb(83, 83, 83);
-    border-radius: 5vh;
-    width: 65vw;
-    height: 75vh;
+    border-radius: 28px;
+    width: 65%;
+    padding: 30px 0;
 }
 #soft-skills .skill-items{
-    height: 65vh;
-    padding-top: 6vh;
     justify-content: space-evenly;
     align-items: baseline;
+    padding-top: 45px;
+}
+.actual-item{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+    height: auto;
+    padding-bottom: 15px;
+}
+.actual-item ul, .dev-item ul{
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+.actual-item ul{
+  width: 100%;
+}
+.dev-item ul{
+  width: 40%;
+}
+.actual-item .framework{
+    font-size: 20px;
+    color: rgb(83, 83, 83);
 }
 .actual-item > p, .dev-item > p{
-    font-size: 3.5vh;
+    font-size: 21px;
     margin: 0;
     color:rgb(255, 98, 119);
 }
@@ -302,56 +328,31 @@ h3{
 .slash{
     color:rgb(255, 98, 119);
 }
-.actual-item{
-    margin-top: 3vh;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 18vw;
-    height: 26vh;
-}
-.actual-item ul, .dev-item ul{
-    font-size: 3vh;
-    margin: 0;
-    width: 16vw;
-    text-align: center;
-    padding: 0;
-    list-style: none;
-}
-.actual-item .framework{
-    font-size: 3vh;
-    color: rgb(83, 83, 83);
-}
 .dev-item{
     display: flex;
     align-items: center;
-    padding-top: 5vh;
+    padding-top: 15px;
     box-sizing: border-box;
     flex-direction: column;
-    width: 54vw;
-    height: 35vh;
+    width: 100%;
     border-top: solid 2px rgb(245, 2, 95);
-}
-.dev-item ul{
-    width: 18vw;
 }
 .dev-item div{
     display: flex;
     justify-content: center;
-    width: 54vw;
+    width: 100%;
     flex-direction: row;
 }
 footer{
     color: #ffffff;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     height: 280px;
     background-color: rgb(107, 13, 230)
 }
 footer p {
     word-spacing: 8px;
-    margin: 1vh;
+    margin: 5px;
     padding: 0;
     font-size: 24px;
     height: 50px;
@@ -366,8 +367,8 @@ footer div {
 }
 footer img{
     position: relative;
-    top: 1vh;
-    width: 4vh;
+    top: 6px;
+    width: 22px;
 }
 .fa-linkedin, .fa-github{
     color: #ffffff;
@@ -376,79 +377,86 @@ footer img{
 .fa-linkedin:hover, .fa-github:hover{
     font-size: 40px;
 }
-@media  (min-width: 320px) and (max-width: 1024px){
+@media  (min-width: 50px) and (max-width: 1024px){
+  /* -------------MENU------------ */
     nav{
-        height: 110px;
+        width: 100%;
+        height: 100px;
     }
     nav ul li{
-        font-size: 17px;
-        padding: 0 8px;
-        letter-spacing: 0;
+        font-size: 14px;
+        padding: 0 10px;
+        letter-spacing: 1px;
     }
     nav ul li:hover{
         font-size: 16px;
     }
+    /* ---MAIN CONTENEDOR INTERNO PRINCIPAL--- */
     main{ 
-        margin-top: 110px;
-        height: 670vh;
+        width: 100%;
+        margin-top: 100px;
+        height: auto;
     }
+    /* -------------PORTADA-------------- */
     #cover-img{
-        height: 70vh;
-        background-size: 100vw 70vh;
+        height: 350px;
+        background-size: 100% 350px;
     }
     #cover-page{
-        height: 70vh;
+        height: 350px;
     }
     h1, h2{
         font-size: 20px;
     }
     h2{
-        width: 70vw;
+        width: 80%;
     }
+    /* -------------SECCION SOBRE MI-------------- */
     #about-me{
-        width: 100vw;
-        height: 120vh;
+        width: 100%;
+        height: auto;
     }
     h3{
-        height: 20vh;
-        font-size: 30px;
+        height: 120px;
+        font-size: 26px;
     }
     #about-me-content{
-        display: flex;
-        justify-content: center;
         flex-direction: column;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: auto;
     }
     .my-photo{
-        height: 30vh;
+        height: 210px;
+        margin-top: 60px;
     }
     #about-me-content p{
-        font-size: 24px;
+        font-size: 21px;
         line-height: 35px;
-        width: 90vw;
+        width: 90%;
         height: auto;
         margin: 0;
-        margin-top: 5vh;
+        margin: 40px 0 60px 0;
     }
+    /* -------------SECCION PROYECTOS-------------- */
     #projects{
-        height: 180vh;
+        height: auto;
     }
     #project-tittle{
-        height: 20vh;
+      height: 120px;
+      font-size: 26px;
     }
     .portafolio-icon{
-        margin-right: 1vh;
-        max-width: 18vw;
-        height: 10vh;
+        margin-right: 15px;
+        height: 55px;
     }
     #project-content{
-        height: 160vh;
+        height: auto;
         flex-wrap: nowrap;
         flex-direction: column;
     }
     .actual-project {
-        width: 100vw;
+        margin: 10px 0;
+        width: 100%;
         height: 230px;
         flex-direction: column;
     }
@@ -461,7 +469,7 @@ footer img{
         height: 30px;
     }
     .project-info{
-        top: 0vh;
+        top: 0;
     }
     #citalk:hover .project-info,
     #bunker:hover .project-info,
@@ -471,111 +479,123 @@ footer img{
       height: 200px;
     }
     .demo-btn{
-        font-size: 2.8vh;
-        line-height: 7vh;
-        width: 30vw;
-        height: 7vh;
+        font-size: 19px;
+        line-height: 50px;
+        width: 110px;
+        height: 50px;
     }
+    /* -------------SECCION HABILIDADES-------------- */
     #skills{
-         height: 300vh;
-         font-size: 3;
+         height: auto;
     }
+    /* -----------TITULO--------- */
     #skills h3{
-        font-size: 4.5;
+      font-size: 26px;
     }
+    /* -------CONTENIDO--------- */
     #skills-content{
-        width: 100vw;
-        height: 280vh;
+        margin: 15px 0 20px 0;
+        width: 100%;
+        height: auto;
     }
+    /* -----------SUB-CONTENEDORES--------- */
     #hard-skills, #soft-skills{
-        height: 135vh;
-        width: 100vw;
+        margin: 20px 0;
+        height: auto;
+        width: 100%;
     }
     #soft-skills{
-        height: 130vh;
+        height: auto;
     }
-    #hard-skills .skill-icon{
-        height: 22vh;
-    }
+    /* -----------ICONO DE HABILIDAD--------- */
     .actual-skill-icon{
         width: 130px;
         height: 130px;
     }
+    /* -----------CONTENEDOR DE ITEMS--------- */
+    .skill-items{
+        border-radius: 26px;
+        margin: 5px 0;
+        padding: 10px 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+    #soft-skills .skill-items{
+      padding: 10px 0;
+        height: auto;
+        align-items: center;
+    }
+    /* ----CONTENEDOR DE CADA ITEM DE HARD SKILLS---- */
+    .actual-item{
+        padding: 0;
+        margin: 8px 0;
+        width: 100%;
+        height: auto;
+    }
+    /* -----------SUBTITULOS DE CADA ITEM--------- */
+    .actual-item > p, .dev-item > p{
+        /* border: solid red; */
+        font-size: 19px;
+        border-radius: 0;
+    }
+     /* -----------contenido de subtitulo--------- */
+    .actual-item ul, .dev-item ul, .actual-item .framework{
+        /* border: solid red; */
+        text-align: center;
+        width: 100%;
+        line-height: 38px;
+        height: auto;
+        font-size: 18px;
+    }
+    .dev-item{
+        margin: 8px 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    .dev-item div{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+    .dev-item ul{
+        height: auto;
+        width: 100%;
+    }
+    .dev-item div ul p{
+        font-size: 18px;
+    }
+    /* ----CONTENEDOR DE CADA ITEM DE SOFT SKILLS---- */
+    .soft-item{
+      margin: 10px 0;
+      width: 80%;
+      height: auto;
+  }
+  /* ----IMAGEN DE CADA ITEM DE SOFT SKILLS---- */
     .soft-skill-item{
         width: 50px;
         height: 50px;
     }
-    .soft-item{
-        margin: 0;
-        width: 80vw;
-        height: 18vh;
-    }
     .soft-item p{
-        font-size: 3;
+        font-size: 18px;
     }
-    .skill-items{
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-        width: 95vw;
-        height: 115vh;
-    }
-    #soft-skills .skill-items{
-        padding: 0;
-        height: 110vh;
-        align-items: center;
-    }
-    .actual-item p, .dev-item p{
-        font-size: 3.5vh;
-        border-radius: 2vh;
-    }
-    .actual-item{
-        padding: 0;
-        margin: 0;
-        width: 80vw;
-        height: 24vh;
-    }
-    .last-item{
-        height: 14vh;
-    }
-    .actual-item ul, .dev-item ul{
-        width: 70vw;
-        line-height: 5.5vh;
-        height: 15vh;
-        font-size: 3vh;
-    }
-    .dev-item{
-        margin: 0;
-        padding: 0;
-        border: none;
-        width: 90vw;
-        height: 43vh;
-    }
-    .dev-item div{
-        width: 90vw;
-        flex-direction: column;
-        height: 35vh;
-    }
-    .dev-item ul{
-        height: 17vh;
-        width: 90vw;
-    }
-    .dev-item div ul p{
-        font-size: 3vh;
-    }
+    /* ----PIE DE PAGINA--- */
     footer{
-        height: 30vh;
+        height: 200px;
     }
     footer p {
         margin: 0;
-        font-size: 22px;
+        font-size: 20px;
         height: auto;
     }
     footer p:first-child{
-        margin-top: 2vh;
+        margin-top: 10px;
     }
     footer img{
-        width: 3vh;
+        width: 24px;
     }
     footer div {
         width: 100px;
