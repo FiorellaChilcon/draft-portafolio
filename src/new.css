@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: NATS;
     src: url(../nats-cufonfonts/NATS-Regular.ttf);
@@ -9,7 +8,7 @@ html{
 }
 body{
     width: 100%;
-    min-width: 350px;
+    min-width: 400px;
     margin: 0;
     padding: 0;
     font-family: 'NATS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -19,6 +18,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+  /* -------------MENU------------ */
 nav{
     z-index: 1;
     -webkit-box-shadow: 0px 5px 5px 0px rgba(122,122,122,1);
@@ -97,10 +97,6 @@ h2{
     height: auto;
     flex-direction: column;
 }
-#about-me h3{
-    width: 100%;
-    background-color: rgb(252, 245, 244);
-}
 h3{
     display: flex;
     justify-content: center;
@@ -111,6 +107,11 @@ h3{
     height: 200px;
     letter-spacing: 1vh;
 }
+#about-me h3{
+    width: 100%;
+    background-color: rgb(252, 245, 244);
+}
+/* -------------SECCION SOBRE MI-------------- */
 #about-me-content{
     display: flex;
     flex-direction: row;
@@ -120,6 +121,16 @@ h3{
     height: auto;
     padding: 60px 0;
     background-color: rgb(117, 18, 248);
+}
+.my-photo{
+  width: 235px;
+  height: 250px;
+}
+/* -----------ICONO DE HABILIDAD--------- */
+.actual-skill-icon{
+    margin-bottom: 5px;
+    height: 200px;
+    width: 200px;
 }
 .my-photo:hover, .actual-skill-icon:hover{
     transition: 0.70s;
@@ -133,16 +144,13 @@ h3{
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
 }
-.my-photo{
-  max-width: 50%;
-  height: 250px;
-}
 #about-me-content p{
     font-size: 25px;
     text-align: center;
     color: whitesmoke;
     width: 50%;
 }
+/* -------------SECCION PROYECTOS-------------- */
 #projects{
     flex-direction:column;
     width: 100%;
@@ -173,7 +181,7 @@ h3{
     height: auto;
     margin: 18px 0;
     padding: 0;
-    flex-direction:column;
+    flex-direction: column;
     position: relative;
 }
 .project-img{
@@ -238,6 +246,7 @@ h3{
     padding: 0;
     margin: 0;
 }
+/* -------------SECCION HABILIDADES-------------- */
 #skills-content{
     padding: 20px 0;
     width: 100%;
@@ -246,33 +255,7 @@ h3{
     display: flex;
     flex-direction: column;
 }
-#hard-skills, #soft-skills {
-    margin: 20px 0;
-    width: 100%;
-    flex-direction: column;
-    height: auto;
-}
-.actual-skill-icon{
-    margin-bottom: 5px;
-    height: 200px;
-    width: 200px;
-}
-.soft-skill-item{
-    /* border: solid red; */
-    width: 82px;
-    height: 80px;
-}
-.soft-item{
-  /* border: solid rgb(0, 255, 115); */
-    text-align: center;
-    width: 250px;
-    height: 150px;
-}
-.soft-item p{
-    font-size: 21px;
-    margin: 0;
-    padding: 0;
-}
+/* -----------CONTENEDOR DE ITEMS--------- */
 .skill-items{
     display: flex;
     flex-wrap: wrap;
@@ -286,11 +269,13 @@ h3{
     width: 65%;
     padding: 30px 0;
 }
-#soft-skills .skill-items{
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding-top: 45px;
+#hard-skills, #soft-skills {
+    margin: 20px 0;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
 }
+/* ----CONTENEDOR DE CADA ITEM DE HARD SKILLS---- */
 .actual-item{
     box-sizing: border-box;
     display: flex;
@@ -300,6 +285,13 @@ h3{
     height: auto;
     padding-bottom: 15px;
 }
+/* -----------SUBTITULOS DE CADA ITEM--------- */
+.actual-item > p, .dev-item > p{
+    font-size: 21px;
+    margin: 0;
+    color:rgb(255, 98, 119);
+}
+/* -----------contenido de subtitulo--------- */
 .actual-item ul, .dev-item ul{
     font-size: 20px;
     margin: 0;
@@ -317,17 +309,6 @@ h3{
     font-size: 20px;
     color: rgb(83, 83, 83);
 }
-.actual-item > p, .dev-item > p{
-    font-size: 21px;
-    margin: 0;
-    color:rgb(255, 98, 119);
-}
-.dev-item p{
-    margin: 0;
-}
-.slash{
-    color:rgb(255, 98, 119);
-}
 .dev-item{
     display: flex;
     align-items: center;
@@ -337,12 +318,40 @@ h3{
     width: 100%;
     border-top: solid 2px rgb(245, 2, 95);
 }
+.dev-item p{
+    margin: 0;
+}
+.slash{
+    color:rgb(255, 98, 119);
+}
 .dev-item div{
     display: flex;
     justify-content: center;
     width: 100%;
     flex-direction: row;
 }
+/* ----CONTENEDOR DE CADA ITEM DE SOFT SKILLS---- */
+.soft-item{
+    text-align: center;
+    width: 250px;
+    height: 150px;
+}
+/* ----IMAGEN DE CADA ITEM DE SOFT SKILLS---- */
+.soft-skill-item{
+    width: 82px;
+    height: 80px;
+}
+#soft-skills .skill-items{
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 45px;
+}
+.soft-item p{
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+/* ----PIE DE PAGINA--- */
 footer{
     color: #ffffff;
     flex-direction: column;
@@ -380,7 +389,6 @@ footer img{
 @media  (min-width: 50px) and (max-width: 1024px){
   /* -------------MENU------------ */
     nav{
-        width: 100%;
         height: 100px;
     }
     nav ul li{
@@ -391,11 +399,8 @@ footer img{
     nav ul li:hover{
         font-size: 16px;
     }
-    /* ---MAIN CONTENEDOR INTERNO PRINCIPAL--- */
-    main{ 
-        width: 100%;
+    main{
         margin-top: 100px;
-        height: auto;
     }
     /* -------------PORTADA-------------- */
     #cover-img{
@@ -412,45 +417,33 @@ footer img{
         width: 80%;
     }
     /* -------------SECCION SOBRE MI-------------- */
-    #about-me{
-        width: 100%;
-        height: auto;
-    }
     h3{
         height: 120px;
         font-size: 26px;
     }
     #about-me-content{
         flex-direction: column;
-        width: 100%;
-        height: auto;
+        padding: 45px 0 50px 0;
     }
     .my-photo{
-        height: 210px;
-        margin-top: 60px;
+        height: 200px;
+        width: 190px;
     }
     #about-me-content p{
         font-size: 21px;
         line-height: 35px;
         width: 90%;
-        height: auto;
-        margin: 0;
-        margin: 40px 0 60px 0;
+        margin: 25px 0 0 0;
     }
     /* -------------SECCION PROYECTOS-------------- */
-    #projects{
-        height: auto;
-    }
     #project-tittle{
       height: 120px;
       font-size: 26px;
     }
     .portafolio-icon{
-        margin-right: 15px;
         height: 55px;
     }
     #project-content{
-        height: auto;
         flex-wrap: nowrap;
         flex-direction: column;
     }
@@ -458,7 +451,6 @@ footer img{
         margin: 10px 0;
         width: 100%;
         height: 230px;
-        flex-direction: column;
     }
     .project-img{
       width: 350px;
@@ -467,9 +459,6 @@ footer img{
     .desktop{
         width: 50px;
         height: 30px;
-    }
-    .project-info{
-        top: 0;
     }
     #citalk:hover .project-info,
     #bunker:hover .project-info,
@@ -485,27 +474,8 @@ footer img{
         height: 50px;
     }
     /* -------------SECCION HABILIDADES-------------- */
-    #skills{
-         height: auto;
-    }
-    /* -----------TITULO--------- */
-    #skills h3{
-      font-size: 26px;
-    }
-    /* -------CONTENIDO--------- */
     #skills-content{
-        margin: 15px 0 20px 0;
-        width: 100%;
-        height: auto;
-    }
-    /* -----------SUB-CONTENEDORES--------- */
-    #hard-skills, #soft-skills{
-        margin: 20px 0;
-        height: auto;
-        width: 100%;
-    }
-    #soft-skills{
-        height: auto;
+        padding: 0;
     }
     /* -----------ICONO DE HABILIDAD--------- */
     .actual-skill-icon{
@@ -520,11 +490,9 @@ footer img{
         flex-wrap: nowrap;
         flex-direction: column;
         width: 95%;
-        height: auto;
     }
     #soft-skills .skill-items{
-      padding: 10px 0;
-        height: auto;
+        padding: 10px 0;
         align-items: center;
     }
     /* ----CONTENEDOR DE CADA ITEM DE HARD SKILLS---- */
@@ -532,37 +500,27 @@ footer img{
         padding: 0;
         margin: 8px 0;
         width: 100%;
-        height: auto;
     }
     /* -----------SUBTITULOS DE CADA ITEM--------- */
     .actual-item > p, .dev-item > p{
-        /* border: solid red; */
         font-size: 19px;
-        border-radius: 0;
     }
      /* -----------contenido de subtitulo--------- */
     .actual-item ul, .dev-item ul, .actual-item .framework{
-        /* border: solid red; */
         text-align: center;
-        width: 100%;
+        width: 90%;
         line-height: 38px;
-        height: auto;
         font-size: 18px;
     }
     .dev-item{
         margin: 8px 0;
         padding: 0;
         border: none;
-        width: 100%;
-        height: auto;
     }
     .dev-item div{
-        width: 100%;
         flex-direction: column;
-        height: auto;
     }
     .dev-item ul{
-        height: auto;
         width: 100%;
     }
     .dev-item div ul p{

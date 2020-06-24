@@ -4,7 +4,9 @@
   "description": "Take a look to my projects!",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "htmlhint": "htmlhint dist/*.html ",
+    "stylelint": "stylelint --aei src/**/*.css",
+    "pretest": "npm run htmlhint && npm run stylelint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,9 @@
   },
   "homepage": "https://github.com/FiorellaChilcon/PORTAFOLIO#readme",
   "devDependencies": {
-    "eslint-plugin-html": "^6.0.2"
+    "eslint-plugin-html": "^6.0.2",
+    "htmlhint": "^0.14.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }
