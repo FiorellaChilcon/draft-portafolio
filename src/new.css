@@ -3,6 +3,9 @@
     src: url(../nats-cufonfonts/NATS-Regular.ttf);
     font-weight: bold;
   }
+*{
+  box-sizing: border-box;
+}
 html{
       overflow-x: hidden;
 }
@@ -46,7 +49,7 @@ nav ul li{
     margin: 0;
     text-align: center;
     font-weight: normal;
-    border-right: solid 1.5px rgb(82, 81, 81);
+    border-right: solid 1.5px rgb(114, 114, 114);
 }
 nav ul li:last-child{
     border: none;
@@ -283,7 +286,7 @@ h3{
     flex-direction: column;
     width: 33%;
     height: auto;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 /* -----------SUBTITULOS DE CADA ITEM--------- */
 .actual-item > p, .dev-item > p{
@@ -315,8 +318,8 @@ h3{
     padding-top: 15px;
     box-sizing: border-box;
     flex-direction: column;
-    width: 100%;
-    border-top: solid 2px rgb(245, 2, 95);
+    width: 80%;
+    border-top: solid 1.5px rgb(255, 98, 119);
 }
 .dev-item p{
     margin: 0;
@@ -331,20 +334,21 @@ h3{
     flex-direction: row;
 }
 /* ----CONTENEDOR DE CADA ITEM DE SOFT SKILLS---- */
+#soft-skills .skill-items{
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 50px 0;
+}
 .soft-item{
+    margin: 10px 0;
     text-align: center;
-    width: 250px;
-    height: 150px;
+    width: 33%;
+    height: auto;
 }
 /* ----IMAGEN DE CADA ITEM DE SOFT SKILLS---- */
 .soft-skill-item{
-    width: 82px;
-    height: 80px;
-}
-#soft-skills .skill-items{
-    justify-content: space-evenly;
-    align-items: baseline;
-    padding-top: 45px;
+    width: 71px;
+    height: 70px;
 }
 .soft-item p{
     font-size: 21px;
@@ -360,11 +364,19 @@ footer{
     background-color: rgb(107, 13, 230)
 }
 footer p {
-    word-spacing: 8px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
     margin: 5px;
     padding: 0;
     font-size: 24px;
-    height: 50px;
+}
+footer p i{
+  font-size: 20px;
+}
+footer img{
+    position: relative;
+    top: 6px;
+    width: 22px;
 }
 footer div {
     display: flex;
@@ -374,11 +386,6 @@ footer div {
     width: 120px;
     height: 60px;
 }
-footer img{
-    position: relative;
-    top: 6px;
-    width: 22px;
-}
 .fa-linkedin, .fa-github{
     color: #ffffff;
     font-size: 35px;
@@ -386,7 +393,7 @@ footer img{
 .fa-linkedin:hover, .fa-github:hover{
     font-size: 40px;
 }
-@media  (min-width: 50px) and (max-width: 1024px){
+@media  (min-width: 50px) and (max-width: 700px){
   /* -------------MENU------------ */
     nav{
         height: 100px;
@@ -489,6 +496,7 @@ footer img{
         padding: 10px 0;
         flex-wrap: nowrap;
         flex-direction: column;
+        align-items: center;
         width: 95%;
     }
     #soft-skills .skill-items{
@@ -497,8 +505,9 @@ footer img{
     }
     /* ----CONTENEDOR DE CADA ITEM DE HARD SKILLS---- */
     .actual-item{
+      /* border: solid red; */
         padding: 0;
-        margin: 8px 0;
+        margin: 5px 0;
         width: 100%;
     }
     /* -----------SUBTITULOS DE CADA ITEM--------- */
@@ -521,14 +530,18 @@ footer img{
         flex-direction: column;
     }
     .dev-item ul{
+        margin: 2.5px 0;
         width: 100%;
+    }
+    .dev-item ul:first-child{
+      margin-top: 0;
     }
     .dev-item div ul p{
         font-size: 18px;
     }
     /* ----CONTENEDOR DE CADA ITEM DE SOFT SKILLS---- */
     .soft-item{
-      margin: 10px 0;
+      margin: 12px 0;
       width: 80%;
       height: auto;
   }
@@ -547,10 +560,9 @@ footer img{
     footer p {
         margin: 0;
         font-size: 20px;
-        height: auto;
     }
-    footer p:first-child{
-        margin-top: 10px;
+    footer p i{
+      font-size: 16px;
     }
     footer img{
         width: 24px;
@@ -562,4 +574,25 @@ footer img{
     .fa-linkedin, .fa-github{
         font-size: 30px;
     }
+}
+@media  (min-width: 700px) and (max-width: 1024px) {
+  /* -------------MENU------------ */
+  nav{
+      height: 120px;
+  }
+  nav ul li{
+      font-size: 16px;
+  }
+  nav ul li:hover{
+      font-size: 18px;
+  }
+  main{
+      margin-top: 120px;
+  }
+  .skill-items{
+      width: 95%;
+  }
+  .dev-item{
+    width: 90%;
+  }
 }
