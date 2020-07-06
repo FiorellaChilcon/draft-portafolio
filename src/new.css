@@ -6,10 +6,14 @@
 *{
   box-sizing: border-box;
 }
+#google_translate_element, .skiptranslate{
+    display: none;
+  }
 html{
       overflow-x: hidden;
 }
 body{
+    top: 0 !important;
     width: 100%;
     min-width: 400px;
     margin: 0;
@@ -61,6 +65,16 @@ nav ul li:hover{
 a{
     text-decoration: none;
     color: rgb(87, 84, 84);
+}
+#flag{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+#flag option{
+    font-family: 'NATS', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 main{
     margin-top: 140px;
@@ -180,6 +194,8 @@ h3{
     align-items: center;
 }
 .actual-project {
+    max-height: 350px;
+    max-width: 650px;
     width: 45%;
     height: auto;
     margin: 18px 0;
@@ -188,6 +204,8 @@ h3{
     position: relative;
 }
 .project-img{
+    max-height: 350px;
+    max-width: 650px;
     box-shadow: 0px 0px 22px -8px rgba(87,87,87,1);
     width: 100%;
     height: auto;
@@ -406,6 +424,11 @@ footer div {
     nav ul li:hover{
         font-size: 16px;
     }
+    #flag{
+        right: 8px;
+        top: 70px;
+        font-size: 15px;
+    }
     main{
         margin-top: 100px;
     }
@@ -575,7 +598,7 @@ footer div {
         font-size: 30px;
     }
 }
-@media  (min-width: 700px) and (max-width: 1024px) {
+@media  (min-width: 700px) and (max-width: 1366px) {
   /* -------------MENU------------ */
   nav{
       height: 120px;
@@ -585,6 +608,10 @@ footer div {
   }
   nav ul li:hover{
       font-size: 18px;
+  }
+  #flag{
+      right: 15px;
+      top: 90px;
   }
   main{
       margin-top: 120px;
