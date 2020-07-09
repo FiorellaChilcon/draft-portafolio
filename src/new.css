@@ -194,8 +194,6 @@ h3{
     align-items: center;
 }
 .actual-project {
-    max-height: 350px;
-    max-width: 650px;
     width: 45%;
     height: auto;
     margin: 18px 0;
