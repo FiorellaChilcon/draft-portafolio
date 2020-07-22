@@ -324,10 +324,6 @@ h3{
 .dev-item ul{
   width: 40%;
 }
-.actual-item .framework{
-    font-size: 20px;
-    color: rgb(83, 83, 83);
-}
 .dev-item{
     display: flex;
     align-items: center;
@@ -534,13 +530,6 @@ footer div {
     /* -----------SUBTITULOS DE CADA ITEM--------- */
     .actual-item > p, .dev-item > p{
         font-size: 19px;
-    }
-     /* -----------contenido de subtitulo--------- */
-    .actual-item ul, .dev-item ul, .actual-item .framework{
-        text-align: center;
-        width: 90%;
-        line-height: 38px;
-        font-size: 18px;
     }
     .dev-item{
         margin: 8px 0;
