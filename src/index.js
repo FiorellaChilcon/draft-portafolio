@@ -7,12 +7,12 @@ const flagSelect = document.getElementById('flag');
       los retos que requieren de mi sobreponerme a la incertidumbre
       y adquirir nuevos conocimientos y habilidades. 
       Aspiro a ser full stack developer y formar parte de proyectos
-      que generen impacto social.`;
+      innovadores.`;
     };
     if (e.target.value === 'en') {
       aboutMeP.innerHTML = `Hi, my name is Fiorella!<br>
       My passion is programming and my constant professional development, I enjoy creating graphic
       interfaces that reflect my creativity and challenges that require me to overcome uncertainty and obtain new
-      skills and knowledge. I aspire to be a full stack developer and be part of projects that generate social impact.`;
+      skills and knowledge. I aspire to be a full stack developer and be part of innovative projects.`;
     };
   });
