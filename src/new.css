@@ -225,14 +225,14 @@ h3{
     overflow: hidden;
     transition: 0.4s;
 }
-#citalk:hover .project-info,
+#bq-api:hover .project-info,
 #bunker:hover .project-info,
 #wikiatletas:hover .project-info,
 #mdlinks:hover .project-info{
     width: 100%;
     height: calc(100% - 50px);
 }
-#citalk:hover .desktop, 
+#bq-api:hover .desktop, 
 #bunker:hover .desktop,
 #wikiatletas:hover .desktop,
 #mdlinks:hover .desktop{
@@ -484,7 +484,7 @@ footer div {
         width: 50px;
         height: 30px;
     }
-    #citalk:hover .project-info,
+    #bq-api:hover .project-info,
     #bunker:hover .project-info,
     #wikiatletas:hover .project-info,
     #mdlinks:hover .project-info{
