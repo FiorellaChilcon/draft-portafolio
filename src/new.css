@@ -201,6 +201,8 @@ h3 {
   visibility: hidden;
 }
 .project-info {
+  max-height: 350px;
+  max-width: 650px;
   top: 0;
   margin: 0;
   border-radius: 25px;
@@ -273,6 +275,7 @@ h3 {
   border-radius: 28px;
   width: 65%;
   padding: 30px 0;
+  max-width: 990px;
 }
 #hard-skills, #soft-skills {
   margin: 20px 0;
