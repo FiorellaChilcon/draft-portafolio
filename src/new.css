@@ -219,6 +219,8 @@ h3 {
 #mdlinks:hover .project-info {
   width: 100%;
   height: calc(100% - 50px);
+  max-height: 350px;
+  max-width: 650px;
 }
 #bq-api:hover .desktop, 
 #bunker:hover .desktop,
