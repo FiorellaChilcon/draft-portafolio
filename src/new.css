@@ -71,10 +71,11 @@ main {
 /* --------------------PORTADA----------------------- */
 #cover-img {
   width: 100%;
-  height: 650px;
+  height: 100%;
   background-image: url('./assets/img/background.png');
-  background-size: 100% 650px;
-  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 #cover-page {
   width: 100%;
@@ -115,12 +116,19 @@ h3 {
   background-color: rgb(252, 245, 244);
 }
 /* -------------SECCION SOBRE MI-------------- */
+.me-wrapper {
+  width: 100%;
+  background-color: rgb(117, 18, 248);
+  justify-content: center;
+  display: flex;
+}
 #about-me-content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  max-width: 1800px;
   height: auto;
   padding: 60px 0;
   background-color: rgb(117, 18, 248);
@@ -172,6 +180,7 @@ h3 {
 }
 #project-content {
   width: 100%;
+  max-width: 1800px;
   margin-top: 50px;
   height: auto;
   display: flex;
@@ -366,14 +375,16 @@ footer {
   height: 280px;
   background-color: rgb(107, 13, 230);
 }
-footer p {
+footer > a {
   word-spacing: 4px;
   letter-spacing: 1px;
   margin: 5px;
   padding: 0;
   font-size: 24px;
+  color: white;
+  text-decoration: none;
 }
-footer p i {
+footer > a i {
   font-size: 20px;
 }
 footer img {
@@ -413,10 +424,6 @@ footer div {
     margin-top: 60px;
   }
   /* -------------PORTADA-------------- */
-  #cover-img {
-    height: 350px;
-    background-size: 100% 350px;
-  }
   #cover-page {
     height: 350px;
   }
@@ -552,11 +559,11 @@ footer div {
   footer {
     height: 200px;
   }
-  footer p  {
+  footer > a  {
     margin: 0;
     font-size: 20px;
   }
-  footer p i {
+  footer > a i {
     font-size: 16px;
   }
   footer img {
